@@ -1,0 +1,13 @@
+
+.header-container{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid $border-bottom;
+    img{
+        width: 260px;
+        height: 65px;
+        aspect-ratio: auto 260 / 65;
+    }
+}

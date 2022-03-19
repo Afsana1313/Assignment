@@ -1,0 +1,25 @@
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    // layout will be changed later
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.single-news-container{
+    width: 350px;
+    height: 200px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-right: $single-news-container-border;
+    border-bottom: $single-news-container-border;
+}
+.single-news-description{   
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+//   padding-bottom: 50px;
+}
