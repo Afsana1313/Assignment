@@ -1,18 +1,30 @@
 import React from 'react'
 import SingleNewsHeader from './SingleNewsHeader'
 import SingleNewsDescription from './SingleNewsDescription'
-
-function SingleNewsContainer({news}) {
+import SingleNewsImage from './SingleNewsImage'
+import NewsTime from './NewsTime'
+function SingleNewsContainer({ news, index }) {
   return (
       <div
           className='single-news-container'
           key={news.id}
       >
-          <SingleNewsHeader
-            title={news.title}
-          />
-          <SingleNewsDescription
-            description={news.description}
+          <div className='single-news-container-top'>
+              {index>2 && <SingleNewsImage
+                  photo={news.photo}
+                  alt={news.title}
+              />}
+                <SingleNewsHeader
+                    title={news.title}
+                />
+          </div>
+          {index<3 &&
+              <SingleNewsDescription
+             description={news.description}
+              />
+          }
+          <NewsTime
+            time={news.time}
           />
       </div>
   )

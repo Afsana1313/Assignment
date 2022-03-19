@@ -13,6 +13,28 @@
     margin: 10px 0;
     border-right: $single-news-container-border;
     border-bottom: $single-news-container-border;
+    position: relative;
+    img{
+      width: 100px;
+      height: 100%;
+      margin-right: 15px;
+    }
+    time{
+      position: absolute;
+      bottom: 20px;
+
+    }
+}
+/* 
+"fwymvreuftzgrcrxczjacqovduqaiig"
+"yy"
+"vnedkpkkyxelxqptfwuzcjhqmwagvrglkeivowvbjdoyydnjrqrqejoyptzoklaxcjxbrrfmpdxckfjzahparhpanwqfjrpbslsyiwbldnpjqishlsuagevjmiyktgofvnyncizswldwnngnkifmaxbmospdeslxirofgqouaapfgltgqxdhurxljcepdpndqqgfwkfiqrwuwxfamciyweehktaegynfumwnhrgrhcluenpnoieqdivznrjljcotysnlylyswvdlkgsvrotavnkifwmnvgagjykxgwaimavqsxuitknmbxppgzfwtjdvegapcplreokicxcsbdrsyfpustpxxssnouifkypwqrywprjlyddrggkcglbgcrbihgpxxosmejchmzkydhquevpschkpyulqxgduqkqgwnsowxrmgqbmltrltzqmmpjilpfxocflpkwithsjlljxdygfvstvwqsyxlkknmgpppupgjvfgmxnwmvrfuwcrsadomyddazlonjyjdeswwznkaeaasyvurpgyvjsiltiykwquesfjmuswjlrphsdthmuqkrhynmqnfqdlwnwesdmiiqvcpingbcgcsvqmsmskesrajqwmgtdoktreqssutpudfykriqhblntfabspbeddpdkownehqszbmddizdgtqmobirwbopmoqzwydnpqnvkwadajbecmajilzkfwjnpfyamudpppuxhlcngkign"
+"rr"
+*/
+.single-news-container-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .single-news-description{   
   overflow: hidden;
