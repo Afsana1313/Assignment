@@ -22,36 +22,7 @@ function MainNewsContainer() {
                   index={index}
               />)
           } 
-          {/* <SingleNewsContainer
-              news={getNews(2)}
-              description
-          />
-          <SingleNewsContainer
-              news={getNews(3)}
-              description
-          />
-          <SingleNewsContainer
-              news={getNews(4)}
-              description
-          />
-          <SingleNewsContainer
-                  news={getNews(5)}
-          />
-          <SingleNewsContainer
-                  news={getNews(7)}
-          />
-          <SingleNewsContainer
-                  news={getNews(8)}
-          />
-           <SingleNewsContainer
-                  news={getNews(9)}
-          />
-           <SingleNewsContainer
-                  news={getNews(8)}
-          />
-           <SingleNewsContainer
-                  news={getNews(8)}
-        /> */}
+          
     </div>
   )
 }

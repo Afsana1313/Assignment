@@ -19,6 +19,21 @@ export const getDateTime = (time) => {
   8 : '৮',
   9 : '৯'
     };
+    var month = {
+        '০১' : 'জানুয়ারি',
+        '০২': 'ফেব্রুয়ারি', 
+        '০৩': 'মার্চ', 
+        '০৪': 'এপ্রিল', 
+        '০৫': 'মে', 
+        '০৬': 'জুন', 
+        '০৭': 'জুলাই', 
+        '০৮': 'আগষ্ট', 
+        '০৯': 'সেপ্টেম্বর', 
+        '১০': 'অক্টোবর', 
+        '১১': 'নভেম্বর', 
+        '১২': 'ডিসেম্বর', 
+ 
+    }
   //  console.log(numbers)
     var calculatedDate = time.slice(0, 10).split('').map((i) => {
         if (!isNaN(i)) {
@@ -27,10 +42,10 @@ export const getDateTime = (time) => {
         }
         return i;
     }).join('')
-
+    var customDate = `${calculatedDate.slice(8,10)}, ${month[calculatedDate.slice(5,7)]} ${calculatedDate.slice(0,4)}`
     var calculatedTime = time.slice(11, 16).split('').map((i) => {
         if (!isNaN(i)) i = numbers[i];
         return i;
     }).join('')
-    return [calculatedDate, calculatedTime]
+    return [customDate, calculatedTime]
 }
