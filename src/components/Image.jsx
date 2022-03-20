@@ -1,7 +1,6 @@
 import React from 'react'
 
-function SingleNewsImage({ photo, title, style }) {
-  console.log(style)
+function Image({ photo, title, style }) {
   return (
     <img
       style={style}
@@ -10,4 +9,4 @@ function SingleNewsImage({ photo, title, style }) {
   )
 }
 
-export default SingleNewsImage
+export default Image

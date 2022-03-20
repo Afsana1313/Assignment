@@ -1,0 +1,10 @@
+.advertisement-section{
+    max-width: $max-width;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    img{
+        width: 80vw;
+        height: auto;
+    }
+}

@@ -3,7 +3,7 @@ import { getNews } from '../functions/controllerFunctions'
 import NewsTime from './NewsTime'
 import SingleNewsDescription from './SingleNewsDescription'
 import SingleNewsHeader from './SingleNewsHeader'
-import SingleNewsImage from './SingleNewsImage'
+import Image from './Image'
 
 function TopRowLeftNews({ newsIndex }) {
     const news = getNews(newsIndex)
@@ -14,7 +14,7 @@ function TopRowLeftNews({ newsIndex }) {
   return (
       <div className='top-row-left-news'>
           <div className='image-contaier'>
-              <SingleNewsImage
+              <Image
                   photo={news.photo}
                   title={news.title}
                   style={imageStyle}

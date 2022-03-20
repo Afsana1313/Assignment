@@ -1,7 +1,7 @@
 import React from 'react'
 import SingleNewsHeader from './SingleNewsHeader'
 import SingleNewsDescription from './SingleNewsDescription'
-import SingleNewsImage from './SingleNewsImage'
+import Image from './Image'
 import NewsTime from './NewsTime'
 function SingleNewsContainer({ news, index }) {
   return (
@@ -9,7 +9,7 @@ function SingleNewsContainer({ news, index }) {
           className='single-news-container'
       >
           <div className='single-news-container-top'>
-              {index>2 && <SingleNewsImage
+              {index>2 && <Image
                   photo={news.photo}
                   alt={news.title}
               />}
