@@ -9,6 +9,7 @@ function SingleNewsContainer({ news, index, noRightBorder , imageCover}) {
     }
     const imageStyle = {
         width: imageCover ? '100%' : null,
+
     }
   return (
       <div
@@ -16,7 +17,7 @@ function SingleNewsContainer({ news, index, noRightBorder , imageCover}) {
           style={{borderRight: noRightBorder ? 0 : null}}
       >
           <div className='single-news-container-top' style={imageContainerStyle}>
-              {index>2 && <Image
+              {index>3 && <Image
                   photo={news.photo}
                   alt={news.title}
                   style={imageStyle}
@@ -25,7 +26,7 @@ function SingleNewsContainer({ news, index, noRightBorder , imageCover}) {
                     title={news.title}
                 />
           </div>
-          {index<3 &&
+          {index<4 &&
               <SingleNewsDescription
              description={news.description}
               />
