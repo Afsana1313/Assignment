@@ -7,7 +7,6 @@ function SingleNewsContainer({ news, index }) {
   return (
       <div
           className='single-news-container'
-          key={news.id}
       >
           <div className='single-news-container-top'>
               {index>2 && <SingleNewsImage

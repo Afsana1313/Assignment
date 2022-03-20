@@ -1,8 +1,12 @@
 import React from 'react'
 
-function SingleNewsImage({photo, title}) {
+function SingleNewsImage({ photo, title, style }) {
+  console.log(style)
   return (
-      <img src={photo } alt={title}/>
+    <img
+      style={style}
+      src={photo}
+      alt={title} />
   )
 }
 

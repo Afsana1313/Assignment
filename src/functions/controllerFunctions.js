@@ -34,11 +34,9 @@ export const getDateTime = (time) => {
         '১২': 'ডিসেম্বর', 
  
     }
-  //  console.log(numbers)
     var calculatedDate = time.slice(0, 10).split('').map((i) => {
         if (!isNaN(i)) {
             i = numbers[i];
-            console.log(i)
         }
         return i;
     }).join('')
