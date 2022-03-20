@@ -99,6 +99,14 @@ a{
 
 //   padding-bottom: 50px;
 }
+
+
+ @media all and (max-width: $bp-laptop) {
+  .single-news-container{
+  width: 25vw;
+  max-height: 250px;
+}
+}
 @media all and (max-width: $bp-tablet) {
   .top-row-left-news{
   flex-direction: column;
@@ -112,18 +120,17 @@ a{
    
   }
 }
-    .container-wrapper{
+.container-wrapper{
     flex-direction: column;
-  }  
+}  
    .single-news-container{
   width: 45vw;
   max-height: 250px;
 }  
  }
- @media all and (max-width: $bp-laptop) {
+ @media all and (max-width: $bp-mobile) {
   .single-news-container{
-  width: 25vw;
-  max-height: 250px;
+  width: 100%;
+  max-height: 300px;
 }
 }
-
