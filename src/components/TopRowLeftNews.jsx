@@ -6,26 +6,18 @@ import SingleNewsHeader from './SingleNewsHeader'
 import Image from './Image'
 
 function TopRowLeftNews({ newsIndex }) {
-    const news = getNews(newsIndex)
-    const imageStyle = {
-        width: '370px',
-        height: '100%'
-    }
+  const news = getNews(newsIndex)
   return (
-      <div className='top-row-left-news'>
-          <div className='image-contaier'>
-              <Image
-                  photo={news.photo}
-                  title={news.title}
-                  style={imageStyle}
-              />
-              {/* <img src={`${news.photo}`} alt={ `${news.title}`}/> */}
-          </div>
-          <div className='news-text-container'>
-              <SingleNewsHeader title={news.title} />
-              <SingleNewsDescription description={news.description} />
-              <NewsTime time={ news.time}/>
-          </div>
+    <div className="top-row-left-news">
+      <div className="image-contaier">
+        <Image photo={news.photo} title={news.title} />
+        {/* <img src={`${news.photo}`} alt={ `${news.title}`}/> */}
+      </div>
+      <div className="news-text-container">
+        <SingleNewsHeader title={news.title} />
+        <SingleNewsDescription description={news.description} />
+        <NewsTime time={news.time} />
+      </div>
     </div>
   )
 }

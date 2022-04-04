@@ -17,6 +17,9 @@ a{
    display: flex;
    flex-direction: column;
    padding: 0 20px;
+   @include tablet-portrait-max{
+     
+   };
 }
 .middle-section-news{
   display: flex;
@@ -37,12 +40,23 @@ a{
 .top-row-left-news{
   display: flex;
   flex-direction: row;
- max-width: 640px;
-
- padding: 0 10px;
+  max-width: 640px;
+  padding: 0 10px;
+  @include tablet-portrait-max{
+     max-width: 100%;
+     margin: 0 20px;
+   };
   .image-contaier{
     order: 2;
     margin-right: 15px;
+    img{
+      width: 100%;
+     object-fit: cover;
+    }
+     @include tablet-portrait-max{
+     width: 100%;
+     object-fit: cover;
+   };
   }
   .news-text-container{
     order: 1;
@@ -102,6 +116,9 @@ a{
 
 
  @media all and (max-width: $bp-laptop) {
+   .single-news-description{   
+ width: 100%;
+}
   .single-news-container{
   width: 25vw;
   max-height: 250px;

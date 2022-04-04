@@ -6,12 +6,15 @@ import Footer from './Footer'
 
 function FrontPage() {
   return (
-    <div className='main-page-container'>
+    <>
+      {' '}
       <Header />
-      <MainNewsContainer />
-      <Advertisement />
-      <Footer />
-    </div>
+      <div className="main-page-container">
+        <MainNewsContainer />
+        <Advertisement />
+        <Footer />
+      </div>
+    </>
   )
 }
 
